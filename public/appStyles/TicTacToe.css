@@ -1,0 +1,124 @@
+body {
+    font-family: 'Lobster', cursive;
+    font-family: 'Rubik Mono One', sans-serif;
+    background-color: #EAEAEA;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.head {
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.tile {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 3px solid rgb(59 130 246);
+    color: #3498db;
+    font-size: 32px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.tile:hover {
+    background-color: #45aaf2;
+    box-shadow: 0 0 10px rgba(69, 170, 242, 0.7);
+}
+
+.tile:active {
+    background-color: #3498db;
+    box-shadow: none;
+}
+
+.gamePoint {
+    margin-top: 10px;
+    width: 190px;
+    height: 160px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+}
+
+.results {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(59 130 246);
+}
+
+
+.results button {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.results button:hover {
+    background-color: #45aaf2;
+    box-shadow: 0 0 10px rgba(69, 170, 242, 0.7);
+}
+
+.results button:active {
+    background-color: white;
+    color: #3498db;
+    box-shadow: none;
+}
+
+
+.game-mode-selector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.game-mode-selector span {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.game-mode-slider {
+    width: 80%;
+}
+
+.game-mode-value {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.turnMessage {
+    color: #3498db;
+    margin-top: 50px;
+    font-size: 30px;
+}
+
